@@ -1,0 +1,51 @@
+=================================================================
+  NOISE / PHANTOM FILTER — SUMMARY REPORT
+  Generated: 2026-03-19 11:48
+=================================================================
+
+OVERALL
+  Total conversations in input file : 243,547
+  Noise / Phantom records removed   : 104,473  (42.9%)
+  Clean conversations kept          : 139,074  (57.1%)
+
+NOISE BREAKDOWN BY REASON
+    55,766  (22.9%)  Acknowledgement / 'Good to know!' button click
+    19,095  (7.8%)  URL-only (notification link click)
+    11,998  (4.9%)  Acknowledgement reaction
+     9,683  (4.0%)  Greeting only (no question)
+     5,285  (2.2%)  Empty / no user message
+     2,081  (0.9%)  Emoji reaction button click
+       374  (0.2%)  Workflow approval button click
+       191  (0.1%)  Noise pattern match
+
+TOP 20 FIRST USER MESSAGES IN NOISE RECORDS
+    50,047  'good to know!'
+     9,722  'acknowledged'
+     6,391  'hi'
+     5,285  ''
+     3,207  'https://aznextgen.service-now.com/esc?id=kb_article&sysparm_article=kb'
+     2,280  'https://workvivo.astrazeneca.com/news/13758'
+     1,892  'hello'
+     1,710  'user took an action'
+     1,441  'https://workvivo.astrazeneca.com/news/14146'
+     1,375  'https://nucleusvideo.astrazeneca.com/media/t/1_m1h3s8wq'
+     1,367  'https://nucleusvideo.astrazeneca.com/media/t/1_d8g03421'
+     1,337  'bom saber!'
+     1,207  ':blush: good'
+     1,156  '¡bueno saberlo!'
+     1,027  '很高兴知道'
+       894  'https://az.brightidea.com/promptwithme'
+       890  'hola'
+       811  'https://aznextgen.service-now.com/esc?id=kb_article&table=kb_knowledge'
+       809  'https://workvivo.astrazeneca.com/spaces/237817/feed'
+       777  'https://workvivo.astrazeneca.com/comments/update/74026408'
+
+OUTPUT FILES
+  noise_phantom_records.xlsx          — noise records with reason column
+  clean_conversations.xlsx            — clean conversations only
+
+NEXT STEP
+  Use clean_conversations.xlsx as your input to the dashboard.
+  Run: streamlit run dashboard.py
+  (Update EXCEL_FILE in dashboard.py to 'clean_conversations.xlsx')
+=================================================================
